@@ -1,0 +1,5 @@
+build_log.txt
+copy_log.txt
+__pycache__/
+.DS_Store
+Thumbs.db
