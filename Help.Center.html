@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNcraft | Help Center</title>
+    <link rel="canonical" href="Help.Center.html">
+</head>
+<body>
+<script>
+(function () {
+    fetch('tutorial.html', { cache: 'no-store' })
+        .then(function (r) { return r.text(); })
+        .then(function (html) {
+            document.open();
+            document.write(html);
+            document.close();
+        })
+        .catch(function () {
+            document.body.innerHTML = '<p style="font-family:sans-serif;padding:24px">Help Center could not load. <a href="tutorial.html">Open tutorial.html</a></p>';
+        });
+})();
+</script>
+</body>
+</html>
